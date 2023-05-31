@@ -1,4 +1,3 @@
-
 def split_file(input_file, output_folder):
     with open(input_file, 'r') as file:
         quotes = file.read().split('\n\n')
@@ -8,4 +7,4 @@ def split_file(input_file, output_folder):
         with open(output_file_path, 'w') as output_file:
             output_file.write(quote)
 
-split_file('C:\\Users\\allso\\Downloads\\paranoid.txt', 'C:\\Users\\allso\\OneDrive\\Documents\\overlays')
+split_file('SOURCE TEXT PATH', 'OUTPUT PATH')
