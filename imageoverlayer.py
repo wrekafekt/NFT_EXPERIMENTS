@@ -4,9 +4,13 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 
 # Define the directory of your images
-img_dir = 'C:/Users/allso/OneDrive/Documents/images'
-overlay_dir = 'C:/Users/allso/OneDrive/Documents/overlays'  # directory with overlay images and text files
-font_dir = 'C:/Users/allso/OneDrive/Documents/fonts'  # directory of your fonts
+img_dir = 'IMAGE DIRECTORY PATH'
+
+# Define the directory of your overlay images and text files
+overlay_dir = 'OVERLAY DIRECTORY PATH'
+
+# Define the directory of your fonts
+font_dir = 'FONT DIRECTORY PATH' 
 
 # Get list of overlay images
 overlay_images = [f for f in os.listdir(overlay_dir) if f.endswith(".png") or f.endswith(".jpg")]
@@ -99,7 +103,7 @@ for filename in os.listdir(img_dir):
                 draw.text((text_position_x, text_position_y), overlay_text, font=overlay_font, fill=(0, 0, 0, 255))
 
             # Save the modified image
-            output_dir = 'C:/Users/allso/OneDrive/Documents/output'  # directory to save the modified images
+            output_dir = 'OUTPUT DIRECTORY PATH'  # directory to save the modified images
             os.makedirs(output_dir, exist_ok=True)  # Create the output directory if it doesn't exist
             output_filename = os.path.splitext(filename)[0] + "_modified.png"  # modify the filename if desired
             output_path = os.path.join(output_dir, output_filename)
