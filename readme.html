@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Random Image Overlay Script</title>
+</head>
+
+<body>
+    <h1>How to Use the Random Image Overlay Script</h1>
+    <p>This document explains how to use a Python script that applies randomly chosen overlay images and text to the images in a specific directory.</p>
+
+    <h2>Prerequisites:</h2>
+    <ul>
+        <li>You need Python 3.8 or newer installed on your computer.</li>
+        <li>You need the Python Imaging Library (PIL) installed. If you haven't installed it yet, you can do so by running <code>pip install pillow</code> in your command line.</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>
+            <strong>Set up your directories:</strong> The script uses specific directories to find your images, overlays, and fonts. Set up these directories as follows:
+            <ul>
+                <li>Create a directory with the images you want to modify. Note down its path.</li>
+                <li>Create a directory for your overlay images and text files. Note down its path.</li>
+                <li>Create a directory for your font files (with a .ttf extension). Note down its path.</li>
+                <li>Create a directory where you want the script to save the modified images. Note down its path.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Update the script:</strong> Open the script in a text editor (such as Notepad or Visual Studio Code). Replace the following placeholders with the paths you noted down in step 1:
+            <ul>
+                <li>Replace 'C:/Users/allso/OneDrive/Documents/images' with the path to your images.</li>
+                <li>Replace 'C:/Users/allso/OneDrive/Documents/overlays' with the path to your overlay images and texts.</li>
+                <li>Replace 'C:/Users/allso/OneDrive/Documents/fonts' with the path to your font files.</li>
+                <li>Replace 'C:/Users/allso/OneDrive/Documents/output' with the path where you want the modified images to be saved.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Adjust script parameters (optional):</strong> If you want, you can adjust these parameters in the script to change how it works:
+            <ul>
+                <li><code>font_size</code> adjusts the initial size of the overlay text font.</li>
+                <li><code>min_font_size</code> determines the smallest size that the overlay text font can be.</li>
+                <li><code>max_image_overlays</code> determines the maximum number of overlay images that can be applied to each image.</li>
+                <li><code>max_text_overlays</code> determines the maximum number of overlay texts that can be applied to each image.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Run the script:</strong> Open a command line window. Navigate to the directory where the script is saved using the <code>cd</code> command. Then, run the script with the <code>python</code> command followed by the script's filename. For example, if your script is called "random_overlay.py", you would run <code>python random_overlay.py</code>.
+        </li>
+    </ol>
+
+    <p>That's it! The script will now process each image in your images directory, apply random overlays, and save the modified images in your output directory. It will also print the path of each saved image in the command line. Enjoy your newly modified images!</p>
+</body>
+
+</html>
